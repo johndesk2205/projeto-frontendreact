@@ -14,21 +14,13 @@ export default function Filter({ minFilter, setMinFilter, maxFilter, setMaxFilte
   };
   const [mostrarImagem, setMostrarImagem] = useState(true);
 
-  const mudarAnimacao = () => {
-    if (mostrarImagem) {
-      setMostrarImagem(false);
-
-    } else {
-      setMostrarImagem(true);
-    }
-  }
   return (
     <>
       <StyledFilters>
         <div className="header-filter">
           <h2>Filters</h2>
           {mostrarImagem && (
-            <img className={`image ${mostrarImagem ? 'appear' : ''}`} src={search} onAnimationEnd={mudarAnimacao} />
+            <img src={search} />
           )}
         </div>
         <label id="minimo">Valor Mínimo:</label>

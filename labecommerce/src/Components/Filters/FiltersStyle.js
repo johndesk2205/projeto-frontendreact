@@ -18,46 +18,6 @@ export const StyledFilters = styled.div`
         color: black;
         height: 30px;
     }
-    @keyframes disappear {
-    0% {
-    opacity: 1;
-    transform: translateY(0);
-    }
-    50% {
-    opacity: 0;
-    transform: translateY(100px);
-    }
-    100% {
-    opacity: 0;
-    transform: translateY(200px);
-    }
-}
-
-@keyframes appear {
-    0% {
-    opacity: 0;
-    transform: translateY(200px);
-    }
-    50% {
-    opacity: 0;
-    transform: translateY(100px);
-    }
-    100% {
-    opacity: 1;
-    transform: translateY(0);
-    }
-}
-.image{
-    animation-name: disappear;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-.image.appear{
-    animation-name: appear;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
 
     img{
         width: 100px;
