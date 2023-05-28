@@ -5,7 +5,6 @@ export const HomeStyled = styled.div`
     grid-column: 3/9;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5%, 95%;
-    border: 2px solid #9D91FF;
     padding: 30px;
     gap: 10px;
     .header{

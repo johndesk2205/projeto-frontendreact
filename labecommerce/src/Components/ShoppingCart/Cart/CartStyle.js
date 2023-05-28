@@ -5,7 +5,6 @@ export const CartStyled = styled.div`
     grid-column: 9/11;
     position: sticky;
     top: 0px;
-    border: 2px solid #9D91FF;
     padding: 20px;
     gap: 10px;
     height: fit-content;
@@ -23,6 +22,19 @@ export const CartStyled = styled.div`
     p{
         border-bottom: 1px solid black;
         gap: 50px;
+    }
+    .button{
+        width: 150px;
+        height: 30px;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid yellow;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+            background-color: #9D91FF;
+        }
     }
     
 `
