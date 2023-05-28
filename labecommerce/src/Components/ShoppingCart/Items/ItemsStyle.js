@@ -36,3 +36,8 @@ export const StyledItems = styled.div`
         }
     }
 `
+export const StyleImg = styled.img`
+    width: 10px;
+    height: 10px;
+
+`

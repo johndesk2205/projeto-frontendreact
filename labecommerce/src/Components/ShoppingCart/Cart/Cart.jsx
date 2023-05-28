@@ -51,10 +51,17 @@ export default function Cart({ cart, setCart, amount, setAmount }) {
             key={product.id}
             name={product.name}
             value={product.value * product.quantity}
+            image={product.imageUrl}
             quantity={product.quantity}
             removeItem={removeItem}
             id={product.id} />
     })
+
+    const comprar = () => {
+
+        alert("Função não implementada ainda, aguarde!")
+
+    }
 
     return (
         <>
@@ -66,6 +73,9 @@ export default function Cart({ cart, setCart, amount, setAmount }) {
                 {renderItemsOnCart}
                 <br />
                 <p> Total: R${amount.toFixed(2)}</p>
+                {cart.length > 0 && (
+                    <button className="button" onClick={comprar}>Comprar</button>
+                )}
             </CartStyled>
         </>
     )
